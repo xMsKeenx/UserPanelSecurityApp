@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Admin Controls";
+}
+
+<div class="bg-light p-5 rounded shadow-sm">
+    <h1 class="display-4 text-danger">⚠️ System Administrator Console</h1>
+    <p class="lead">Restricted Access Zone - Authorized Admin Accounts Only.</p>
+    <hr class="my-4">
+
+    <div class="row text-center mt-4">
+        <div class="col-md-6">
+            <div class="card border-danger mb-3 p-3">
+                <h3>Total Registered Users</h3>
+                <h2 class="display-4 text-dark">@ViewBag.TotalUsers</h2>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card border-danger mb-3 p-3">
+                <h3>Total Stored Notes</h3>
+                <h2 class="display-4 text-dark">@ViewBag.TotalNotes</h2>
+            </div>
+        </div>
+    </div>
+</div>

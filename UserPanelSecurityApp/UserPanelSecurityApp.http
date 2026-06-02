@@ -1,0 +1,6 @@
+@UserPanelSecurityApp_HostAddress = http://localhost:5128
+
+GET {{UserPanelSecurityApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
