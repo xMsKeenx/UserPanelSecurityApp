@@ -34,14 +34,14 @@ namespace UserPanelSecurityApp.Controllers
                 return View(model);
             }
 
-            // Secure password hashing using BCrypt with custom work factor parameter
+          
             string secureHash = BCrypt.Net.BCrypt.HashPassword(model.Password, workFactor: 12);
 
             var user = new AppUser
             {
                 Email = model.Email,
                 PasswordHash = secureHash,
-                Role = "User" // Set to "Admin" manually in DB for your test administrator user
+                Role = "User" 
             };
 
             _context.AppUsers.Add(user);
